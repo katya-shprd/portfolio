@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Section } from './Section';
 
 export const HomePage = () => {
@@ -8,16 +8,18 @@ export const HomePage = () => {
                 <a href="https://github.com/katya-shprd" target="_blank" className="link text-white">
                     <img
                         className="icon"
+                        alt=""
                         src={require('../assets/github-logo.svg')}/>
                     GitHub
                 </a>
                 <a href="https://www.linkedin.com/in/ekaterina-povarenko/" target="_blank" className="link text-white">
                     <img
                         className="icon"
+                        alt=""
                         src={require('../assets/linkedin-logo.svg')}/>
                     LinkedIn</a>                
             </nav>
-            <div className="hero-section">
+            <div className="hero-section" style={{ marginBottom: '120px' }}>
                 <h1 className="text-white">
                     Hi, my name is Ekaterina Povarenko. I am a student and a web developer living in Helsinki. In my work I combine React with Firebase to develop insightful prototypes in short terms. Here you will find three my favorite projects and get familiar with my works.
                 </h1>
@@ -68,6 +70,14 @@ export const HomePage = () => {
                     From the technical perspective I was willing to get up-to-date with CSS styling techniques, such as Flexbox, Grid and working with webfonts.
                 </p>
             </Section>
+
+            <div className="hero-section">
+                <h1 className="text-white">
+                    Thank you for scrolling, feel free to contact me: <br/> <br/>
+                    — 044 219 8420  <br/>
+                    — povarenko.ekaterina@gmail.com
+                </h1>
+            </div>
         </div>
     )
 }
